@@ -50,6 +50,8 @@ EY_UHI_Challenge/
    ```
 
 ## 📊 Data Overview
+You can download all the data from the competition page: [Zindi Urban Heat Island Challenge Data](https://zindi.africa/competitions/urban-heat-island-challenge/data)
+
 The `data/` directory contains the following key files:
 - **Training Data:** `sample_brazil_uhi_data.csv`, `sample_chile_uhi_data.csv` (Lat/Lon with UHI Class)
 - **Test Data:** `Validation_Dataset.csv` (Lat/Lon to predict), `test_data_sierra.csv`

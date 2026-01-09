@@ -1,0 +1,16 @@
+matplotlib==3.7.5
+seaborn==0.13.2
+numpy==1.26.4
+pandas==2.1.4
+xarray==2025.3.1
+rioxarray==0.17.0
+geopandas==1.0.1
+shapely==2.0.6
+pyproj==3.7.0
+rasterio==1.4.2
+scikit-learn==1.4.2
+planetary-computer==1.0.0
+pystac-client==0.8.5
+pystac==1.11.0
+tqdm==4.66.6
+odc-stac==0.3.10

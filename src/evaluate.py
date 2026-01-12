@@ -65,7 +65,11 @@ def evaluate(model_path, input_path, output_dir='reports', cv_folds=5):
     # Create report directory
     from datetime import datetime
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    report_dir = os.path.join(output_dir, f'evaluation_{timestamp}')
+    
+    # Extract model name from model_path for folder naming
+    model_name = os.path.splitext(os.path.basename(model_path))[0]
+    
+    report_dir = os.path.join(output_dir, f'{model_name}_{timestamp}')
     os.makedirs(report_dir, exist_ok=True)
     print(f"Saving reports to {report_dir}...")
 

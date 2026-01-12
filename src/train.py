@@ -82,7 +82,7 @@ def train(input_path, model_out_path, model_arch_name, test_size=0.3, random_sta
     if not base_dir:
         base_dir = 'models'
         
-    run_dir = os.path.join(base_dir, f'train_{timestamp}')
+    run_dir = os.path.join(base_dir, f'{model_arch_name}_{timestamp}')
     os.makedirs(run_dir, exist_ok=True)
     
     filename = os.path.basename(model_out_path)

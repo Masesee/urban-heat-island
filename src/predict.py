@@ -114,7 +114,10 @@ def predict(input_path, model_path, output_path, tiff_path=None, shp_path=None, 
     if not base_dir:
         base_dir = 'submissions'
         
-    run_dir = os.path.join(base_dir, f'predict_{timestamp}')
+    # Extract model name from model_path for folder naming
+    model_name = os.path.splitext(os.path.basename(model_path))[0]
+    
+    run_dir = os.path.join(base_dir, f'{model_name}_{timestamp}')
     os.makedirs(run_dir, exist_ok=True)
     
     filename = os.path.basename(output_path)

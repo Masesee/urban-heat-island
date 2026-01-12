@@ -52,11 +52,11 @@ ipython_config.py
 *.prj
 
 # Project Specific
-# Ignore saved models
-models/*.pkl
-models/*.h5
-models/*.pt
-models/*.joblib
+# Ignore data directory
+data/
+
+# Ignore saved models (all content)
+models/
 
 # Ignore generated submissions
 submissions/
